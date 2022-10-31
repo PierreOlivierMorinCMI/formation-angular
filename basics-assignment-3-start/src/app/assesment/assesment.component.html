@@ -1,0 +1,5 @@
+<button class="btn btn-primary" (click)="setVisible()">Display Details</button>
+
+<p *ngIf="visible">secret Password = thisIsATest</p>
+
+<p *ngFor="let item of events; let i = index" [ngStyle]="{backgroundColor: getColor(i)}" [ngClass]="{ online: i > 4}">{{item}} </p>
